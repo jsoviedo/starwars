@@ -1,0 +1,21 @@
+
+header {
+    position: fixed;
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    background: rgba(75, 2, 75, 0.9);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: auto 15px;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: rgba(39, 163, 201, 0.9)
+}
