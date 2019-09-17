@@ -12,6 +12,7 @@ import { PersonajesComponent } from './components/personajes/personajes.componen
 import { PlanetasComponent } from './components/planetas/planetas.component';
 import { NavesComponent } from './components/naves/naves.component';
 import { RazasComponent } from './components/razas/razas.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RazasComponent } from './components/razas/razas.component';
     PersonajesComponent,
     PlanetasComponent,
     NavesComponent,
-    RazasComponent
+    RazasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
