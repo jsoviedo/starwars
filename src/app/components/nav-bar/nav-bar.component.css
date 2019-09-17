@@ -1,19 +1,15 @@
 
-header {
-    position: fixed;
-}
 
 nav {
     width: 100vw;
-    height: 5vh;
+    height: 46px;
     background: rgba(24, 23, 24, 0.9);
-    padding-top: 15px;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    margin: auto 15px;
+    margin: 24px;
     font-size: 25px;
 }
 

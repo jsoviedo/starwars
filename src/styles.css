@@ -6,10 +6,20 @@
 }
 
 section {
-    margin: 35px auto;
-    height: 75vh;
+    height: 86vh;
+    position: relative;
+    background-image: url("assets/images/star.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
+    background: black;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+

@@ -9,11 +9,11 @@ export class VechilesService {
 
     constructor(
         private _http: HttpClient
-    ){
-        this.url = "https://swapi.co/";
-    }
+    ){  
+        this.url = "https://swapi.co/api/";
+      }
 
-    getVehicles(){
-        return this._http.get(this.url + "api/vehicles/");
+    getStarships(){
+        return this._http.get(this.url + "starships/");
     }
 }

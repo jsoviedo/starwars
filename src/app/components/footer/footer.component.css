@@ -1,12 +1,13 @@
 
 footer {
     width: 100vw;
-    height: 7vh;
+    height: 43px;
     background: rgba(24, 23, 24, 0.9);
     color: white;
     font-size: 22px;
-    margin: auto;
     text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 
 footer p {

@@ -1,1 +1,15 @@
-<p>naves works!</p>
+<div class="contentContainer">
+    <h1>{{title}}</h1>
+    <br>
+    <input #search type="number" name="search" placeholder="Busqueda..." (keyup.enter)="getStarship(search.value)"/>
+    <br>
+    <div class="infoContainer">
+        <h2>{{name}}</h2>
+        <hr>        
+        <b><p>Model: {{model}}</p></b>
+        <b><p>Manufacturer: {{manufacturer}}</p></b>
+        <b><p>Crew: {{crew}}</p></b>
+        <b><p>Length: {{length}}</p></b>
+        <b><p>Consumables: {{consumables}}</p></b>
+    </div>
+</div>
