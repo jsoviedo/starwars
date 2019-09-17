@@ -1,18 +1,2 @@
 
 
-nav {
-    width: 100vw;
-    height: 46px;
-    background: rgba(24, 23, 24, 0.9);
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 24px;
-    font-size: 25px;
-}
-
-nav a:hover {
-    color: rgba(39, 163, 201, 0.9)
-}
