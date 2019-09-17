@@ -6,7 +6,8 @@ header {
 nav {
     width: 100vw;
     height: 50px;
-    background: rgba(75, 2, 75, 0.9);
+    background: rgba(24, 23, 24, 0.9);
+    padding-top: 15px;
 }
 
 nav a {
