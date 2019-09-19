@@ -17,11 +17,13 @@ export class NavesComponent implements OnInit {
   public crew: string;
   public length: string;
   public consumables: string;
+  public names: Array<string>;
 
   constructor(
     private _service: VechilesService 
   ) { 
     this.title = "Naves";
+    this.names = [];
   }
 
   ngOnInit() {
@@ -31,6 +33,9 @@ export class NavesComponent implements OnInit {
         let res: any;
         res = response;
         this.starships = res.results;
+        for(let i in this.starships){
+          this.names.push(this.starships[i].name);
+        }
         this.getStarship(2);
         console.log(this.starships);
       },
@@ -41,6 +46,7 @@ export class NavesComponent implements OnInit {
   }
 
   getStarship(id: number){
+    console.log(this.names);
     try {
       this.name = this.starships[id].name;
       this.model = this.starships[id].model;
@@ -51,5 +57,16 @@ export class NavesComponent implements OnInit {
     } catch(err) {
       console.log(err);
     }    
+  }
+  
+  findStarship(name: string){
+    console.log(this.names);
+    let index: number = this.names.indexOf(name);
+    console.log(index);
+    if(index === -1){
+      alert("Starship not found...");
+    } else {
+      this.getStarship(index);
+    }
   }
 }

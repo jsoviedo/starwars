@@ -1,7 +1,7 @@
 <div class="contentContainer">
     <h1>{{title}}</h1>
     <br>
-    <input #search type="number" name="search" placeholder="Busqueda..." (keyup.enter)="getStarship(search.value)"/>
+    <input #search type="text" name="search" placeholder="Busqueda..." (keyup.enter)="findStarship(search.value)"/>
     <br>
     <div class="infoContainer">
         <h2>{{name}}</h2>
