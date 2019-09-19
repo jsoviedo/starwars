@@ -10,6 +10,10 @@ html {
     background: black;
 }
 
+.loading {
+    color: white;
+}
+
 /* Estilos de la barra de navegacion */
 
 nav {

@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class VechilesService {
+export class StarshipsService {
 
     public url: string;
 
