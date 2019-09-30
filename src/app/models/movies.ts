@@ -1,11 +1,11 @@
-export class Starship {
+export class Movie {
 
     constructor(
-        public name: string,
-        public model: string,
-        public manufacturer: string,
-        public crew: string,
-        public length: string,
-        public consumables: string,
-    ){
+        public title: string,
+        public episode_id: string,
+        public opening_crawl: string,
+        public director: string,
+        public producer: string,
+        public release_date: string,
+    ){}
 }
