@@ -53,13 +53,13 @@ export class RazasComponent implements OnInit {
     }    
   }
   
-  //Método para buscar la nave solicitada en la barra de búsqueda 
+  //Método para buscar la raza solicitada en la barra de búsqueda 
   onFindSpecie(name: string){
-    let index: number = this.names.indexOf(name); //Busca el indice de la nave solicitada en el arreglo de nombres 'names'
-    if(index === -1){ //Si el nombre de la nave no esta en en el arreglo de nombres, mostrará una alerta 
+    let index: number = this.names.indexOf(name); //Busca el indice de la raza solicitada en el arreglo de nombres 'names'
+    if(index === -1){ //Si el nombre de la raza no esta en en el arreglo de nombres, mostrará una alerta 
       alert("Specie not found...");
     } else {
-      this.getSpecie(index); //Crea la nave que se mostrara en la vista 
+      this.getSpecie(index); //Crea la raza que se mostrara en la vista 
     }
   }
 
