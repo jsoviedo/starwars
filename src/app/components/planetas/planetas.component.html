@@ -1,1 +1,23 @@
-<p>Planet works</p>
+<div class="contentContainer">
+    <h1>{{title}}</h1>
+    <br>
+    <input #search type="text" name="search" placeholder="Busqueda..." (keyup.enter)="onFindPlanet(search.value)"/>
+    <br>
+
+    <div *ngIf="names.length == 0"
+        class="loading">
+        Cargando...
+    </div>
+
+    <div *ngIf="names.length > 0">
+        <div class="infoContainer">
+            <h2>{{planet.name}}</h2>
+            <hr>        
+            <b><p>Model: {{planet.rotation_period}}</p></b>
+            <b><p>Manufacturer: {{planet.orbital_period}}</p></b>
+            <b><p>Crew: {{planet.diameter}}</p></b>
+            <b><p>Length: {{planet.climate}}</p></b>
+            <b><p>Consumables: {{planet.gravity}}</p></b>
+        </div>
+    </div>  
+</div>
