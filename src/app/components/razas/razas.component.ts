@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SpeciesService } from 'src/app/services/species.service';
+import { Specie } from 'src/app/models/specie';
 
 @Component({
   selector: 'app-razas',
