@@ -1,1 +1,23 @@
-<p>peliculas works!</p>
+<div class="contentContainer">
+    <h1>{{title}}</h1>
+    <br>
+    <input #search type="text" name="search" placeholder="Busqueda..." (keyup.enter)="onFindMovie(search.value)"/>
+    <br>
+
+    <div *ngIf="names.length == 0"
+        class="loading">
+        Cargando...
+    </div>
+
+    <div *ngIf="names.length > 0">
+        <div class="infoContainer">
+            <h2>{{movie.title}}</h2>
+            <hr>        
+            <b><p>episode_id: {{movie.episode_id}}</p></b>
+            <b><p>opening_crawl: {{movie.opening_crawl}}</p></b>
+            <b><p>director: {{movie.director}}</p></b>
+            <b><p>producer: {{movie.producer}}</p></b>
+            <b><p>release_date: {{movie.release_date}}</p></b>
+        </div>
+    </div>  
+</div>
