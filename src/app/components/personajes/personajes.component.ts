@@ -40,7 +40,7 @@ export class PersonajesComponent implements OnInit {
 
   getStarpeople(id: number){
     try {
-      //Crea una nueva nave con el índice dado por parametro
+     
       this.starpeople = new Starpeople(
         this.starpeople[id].name,
         this.starpeople[id].height,
