@@ -1,1 +1,24 @@
-<p>personajes works!</p>
+<div class="contentContainer">
+    <h1>{{title}}</h1>
+    <br>
+    <input #search type="text" name="search" placeholder="Busqueda..." (keyup.enter)="onFindStarpeople(search.value)"/>
+    <br>
+
+    <div *ngIf="names.length == 0"
+        class="loading">
+        Cargando...
+    </div>
+
+    <div *ngIf="names.length > 0">
+        <div class="infoContainer">
+            <h2>{{starpeople.name}}</h2>
+            <hr>
+            <b><p>Height: {{starpeople.height}}</p></b>
+            <b><p>Skin color: {{starpeople.skin_color}}</p></b>
+            <b><p>Birth year: {{starpeople.birth_year}}</p></b>
+            <b><p>Mass: {{starpeople.mass}}</p></b>
+            <b><p>Gender: {{starpeople.gender}}</p></b>
+        </div>
+    </div>
+</div>
+
