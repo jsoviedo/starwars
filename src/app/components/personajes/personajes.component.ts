@@ -12,13 +12,13 @@ export class PersonajesComponent implements OnInit {
 
   public title: string;
   public starpeople: any;
-  public starpeople: Starpeople; 
+  public starperson: Starpeople; 
   public names: Array<string>;
 
 
   constructor(private _service: StarpeopleService ) {
     this.title = "Personajes";
-    this.starpeople = new Starpeople('', '', '' ,'', '', '');
+    this.starperson = new Starpeople('', '', '' ,'', '', '');
     this.names = [];
 
    }
