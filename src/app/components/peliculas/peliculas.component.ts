@@ -57,7 +57,7 @@ export class PeliculasComponent implements OnInit {
   //Método para crear el arreglo de nombres
   getNames(){
     for(let i in this.films){
-      this.names.push(this.films[i].name); //Este método es util para buscar la información de una pelicula despues de que el usuario haya ingresado el nombre de una nave en la barra de búsqueda 
+      this.names.push(this.films[i].title); //Este método es util para buscar la información de una pelicula despues de que el usuario haya ingresado el nombre de una nave en la barra de búsqueda 
     }
   }
 

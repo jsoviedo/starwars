@@ -41,7 +41,7 @@ export class PersonajesComponent implements OnInit {
   getStarpeople(id: number){
     try {
      
-      this.starpeople = new Starpeople(
+      this.starperson = new Starpeople(
         this.starpeople[id].name,
         this.starpeople[id].height,
         this.starpeople[id].skin_color,
