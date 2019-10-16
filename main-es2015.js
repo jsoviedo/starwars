@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"contentContainer\">\r\n    <h1>{{title}}</h1>\r\n    <br>\r\n    <input #search type=\"text\" name=\"search\" placeholder=\"Busqueda...\" (keyup.enter)=\"onFindStarpeople(search.value)\"/>\r\n    <br>\r\n\r\n    <div *ngIf=\"names.length == 0\"\r\n        class=\"loading\">\r\n        Cargando...\r\n    </div>\r\n\r\n    <div *ngIf=\"names.length > 0\">\r\n        <div class=\"infoContainer\">\r\n            <h2>{{starpeople.name}}</h2>\r\n            <hr>\r\n            <b><p>Height: {{starpeople.height}}</p></b>\r\n            <b><p>Skin color: {{starpeople.skin_color}}</p></b>\r\n            <b><p>Birth year: {{starpeople.birth_year}}</p></b>\r\n            <b><p>Mass: {{starpeople.mass}}</p></b>\r\n            <b><p>Gender: {{starpeople.gender}}</p></b>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"contentContainer\">\r\n    <h1>{{title}}</h1>\r\n    <br>\r\n    <input #search type=\"text\" name=\"search\" placeholder=\"Busqueda...\" (keyup.enter)=\"onFindStarpeople(search.value)\"/>\r\n    <br>\r\n\r\n    <div *ngIf=\"names.length == 0\"\r\n        class=\"loading\">\r\n        Cargando...\r\n    </div>\r\n\r\n    <div *ngIf=\"names.length > 0\">\r\n        <div class=\"infoContainer\">\r\n            <h2>{{starperson.name}}</h2>\r\n            <hr>\r\n            <b><p>Height: {{starperson.height}}</p></b>\r\n            <b><p>Skin color: {{starperson.skin_color}}</p></b>\r\n            <b><p>Birth year: {{starperson.birth_year}}</p></b>\r\n            <b><p>Mass: {{starperson.mass}}</p></b>\r\n            <b><p>Gender: {{starperson.gender}}</p></b>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n");
 
 /***/ }),
 
@@ -849,7 +849,7 @@ let PeliculasComponent = class PeliculasComponent {
     //Método para crear el arreglo de nombres
     getNames() {
         for (let i in this.films) {
-            this.names.push(this.films[i].name); //Este método es util para buscar la información de una pelicula despues de que el usuario haya ingresado el nombre de una nave en la barra de búsqueda 
+            this.names.push(this.films[i].title); //Este método es util para buscar la información de una pelicula despues de que el usuario haya ingresado el nombre de una nave en la barra de búsqueda 
         }
     }
     //Método para buscar la nave solicitada en la barra de búsqueda 
@@ -930,7 +930,7 @@ let PersonajesComponent = class PersonajesComponent {
     }
     getStarpeople(id) {
         try {
-            this.starpeople = new src_app_models_starpeople__WEBPACK_IMPORTED_MODULE_3__["Starpeople"](this.starpeople[id].name, this.starpeople[id].height, this.starpeople[id].skin_color, this.starpeople[id].birth_year, this.starpeople[id].mass, this.starpeople[id].gender);
+            this.starperson = new src_app_models_starpeople__WEBPACK_IMPORTED_MODULE_3__["Starpeople"](this.starpeople[id].name, this.starpeople[id].height, this.starpeople[id].skin_color, this.starpeople[id].birth_year, this.starpeople[id].mass, this.starpeople[id].gender);
         }
         catch (err) {
             console.log(err);
