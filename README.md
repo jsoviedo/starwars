@@ -8,11 +8,11 @@ You can visit the app at https://jsoviedo.github.io/starwars/ and test it, we wo
 
 # Collaborators 
 
-jsoviedo Joan Sebastián Oviedo Tínjaca
-javiermedranob Javier Hely Medrano Bermúdez 
-anyeli Anyeli Vianed Ruiz LLano
-jutinoco Juan Carlos Tinoco Muñoz
-visualdemon Wilber Jurado Guerrero
+- jsoviedo Joan Sebastián Oviedo Tínjaca
+- javiermedranob Javier Hely Medrano Bermúdez 
+- anyeli Anyeli Vianed Ruiz LLano
+- jutinoco Juan Carlos Tinoco Muñoz
+- visualdemon Wilber Jurado Guerrero
 
 Software Engineering students at the Politecnico Grancolombiano University 
 
