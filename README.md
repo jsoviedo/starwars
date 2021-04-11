@@ -14,11 +14,9 @@ You can visit the app at https://jsoviedo.github.io/starwars/ and test it, we wo
 - jutinoco: Juan Carlos Tinoco Muñoz
 - visualdemon: Wilber Jurado Guerrero
 
-Software Engineering students at the Politecnico Grancolombiano University 
+Student of Software Engineering at the Politecnico Grancolombiano University 
 
-The Star Wars app uses a public API to get the planets, starships, species, people and films data. You can visit the API at https://swapi.co/api/
-
-Every component in the app has a search bar that can be used to search for a planet, person, film and so on. Take into account that the Search Bar will not find what you are looking for, if it is not typed correctly. 
-
+The Star Wars app used to get the data from a public API that's not longer functional https://swapi.co/api/  
 
 ![image](https://user-images.githubusercontent.com/47950041/114320072-db22be00-9ad9-11eb-8cb4-f0dbb821ee49.png)
+![front-end-2](https://user-images.githubusercontent.com/47950041/114320114-060d1200-9ada-11eb-9467-e7b215cbaa8d.JPG)
