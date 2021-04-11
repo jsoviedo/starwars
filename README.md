@@ -19,3 +19,6 @@ Software Engineering students at the Politecnico Grancolombiano University
 The Star Wars app uses a public API to get the planets, starships, species, people and films data. You can visit the API at https://swapi.co/api/
 
 Every component in the app has a search bar that can be used to search for a planet, person, film and so on. Take into account that the Search Bar will not find what you are looking for, if it is not typed correctly. 
+
+
+![image](https://user-images.githubusercontent.com/47950041/114320072-db22be00-9ad9-11eb-8cb4-f0dbb821ee49.png)
